@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring-security
+    username: javlon
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+
+
+token:
+  secret:
+    key:
+      a910fd6d35fab1c0b7b721da4770457939fa20ba024a3416f51021a92fc211da
